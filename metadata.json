@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "0.2.0-beta.2",
-    "variant": "derived_foo",
+    "version": "0.3.0-alpha",
+    "variant": "derived",
     "dateCreated": "2019-02-19T01:02:03+01:00",
     "generator": {
       "softwareName": "Burrito Factory",
@@ -312,59 +312,5 @@
         "fr": "A propos de Matthieu"
       }
     }
-  },
-  "recipe": {
-    "spec": {
-      "path": "recipe_specs/bitsOfBurrito.recipe_spec.json"
-    },
-    "content": [
-      {
-        "type": "section",
-        "nameId": "ot",
-        "content": [
-          {
-            "type": "element",
-            "nameId": "intot",
-            "ingredient": "release/text/USX_1/OTINT.usx"
-          },
-          {
-            "type": "element",
-            "nameId": "book-gen",
-            "ingredient": "release/text/USX_1/GEN.usx"
-          },
-          {
-            "type": "element",
-            "nameId": "book-exo",
-            "ingredient": "release/text/USX_1/EXO.usx"
-          },
-          {
-            "type": "element",
-            "nameId": "book-lev",
-            "ingredient": "release/text/USX_1/LEV.usx"
-          }
-        ]
-      },
-      {
-        "type": "section",
-        "nameId": "nt",
-        "content": [
-          {
-            "type": "element",
-            "nameId": "intnt",
-            "ingredient": "release/text/USX_1/NTINT.usx"
-          },
-          {
-            "type": "element",
-            "nameId": "intmat",
-            "ingredient": "release/text/USX_1/INTMAT.usx"
-          },
-          {
-            "type": "element",
-            "nameId": "book-mat",
-            "ingredient": "release/text/USX_1/MAT.usx"
-          }
-        ]
-      }
-    ]
   }
 }
