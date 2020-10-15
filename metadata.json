@@ -307,5 +307,13 @@
       }
     }
   },
-  "recipe": []
+  "recipe": [
+    {
+      "idAuthority": "dbl",
+      "operation": "apply_license_agreement",
+      "data":  {
+        "license_agreement": "https://thedigitalbiblelibrary.org/license_agreement/nnnn"
+      }
+    }
+  ]
 }
