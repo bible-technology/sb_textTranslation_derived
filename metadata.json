@@ -2,56 +2,41 @@
   "meta": {
     "version": "0.3.0-alpha",
     "category": "derived",
-    "dateCreated": "2019-02-19T01:02:03+01:00",
+    "dateCreated": "2020-10-29T20:23:03+08:00",
     "generator": {
-      "softwareName": "Burrito Factory",
-      "softwareVersion": "0.1",
-      "userName": "Jane Doe"
+      "softwareName": "Hand-made Burritos",
+      "softwareVersion": "1.0",
+      "userName": "JKT"
     },
-    "defaultLanguage": "en",
-    "comments": ["Experimenting with i18n", "Fixed canon before upload. ~Josh"]
+    "defaultLanguage": "en"
   },
   "idAuthorities": {
-    "dbl": {
-      "id": "https://thedigitalbiblelibrary.org",
+    "ptx": {
+      "id": "http://www.paratext.org",
       "name": {
-        "en": "The Digital Bible Library"
+        "en": "Paratext application"
       }
     },
-    "agmt": {
-      "id": "http://registry.autographamt.com",
+    "exm": {
+      "id": "http://www.example.com/sb-app/",
       "name": {
-        "en": "Autographa"
+        "en": "Another Example application"
       }
-    },
-    "x-atl": {
-      "id": "http://atlantisbibleconsortium.net"
     }
   },
   "identification": {
     "systemId": {
-      "dbl": {
-        "id": "0123456789abcdef",
-        "revision": "23"
-      },
-      "gbc": {
-        "id": "55df02965117ad3f2201309b"
-      },
-      "paratext": {
-        "id": "2d5220a02a7aaac6bcc2831ae262e9aaca5e1abd"
+      "ptx": {
+        "id": "b01d38db1c30059b892c8cbbc65b70271743d32d",
+        "revision": "c772aae2277babbe71dce9e3e061656b6909f5e2"
       }
     },
-    "idAuthority": "dbl",
+    "idServer": "ptx",
     "name": {
-      "en": "Excerpts from a Scripture Burrito Demo Text Bible",
-      "fr": "Des morceaux d'une Cr\u00eape mexicaine biblique surdimensionn\u00e9e (d\u00e9monstration)"
-    },
-    "description": {
-      "en": "Extracts of A Demonstration Scripture Burrito containing Text, like Paratext Might One Day Produce"
+      "en": "World English Bible (American Edition)"
     },
     "abbreviation": {
-      "en": "DSB",
-      "fr": "CMBS"
+      "en": "engWEB14"
     }
   },
   "confidentiality": {
@@ -61,28 +46,24 @@
   "type": {
     "flavorType": {
       "name": "scripture",
-      "currentScope": {
-        "GEN": [],
-        "EXO": ["1", "3-12", "13:4", "14:3-8", "15:8-16:2"],
-        "LEV": ["2-3"],
-        "MAT": ["1", "5", "7-11"]
-      },
-      "canonType": ["ot", "nt"],
-      "canonSpec": {
-        "ot": {
-          "name": "western"
-        },
-        "nt": {
-          "name": "x-matthewOnlyMillenialists",
-          "books": ["MAT"]
-        }
-      },
       "flavor": {
         "name": "textTranslation",
         "projectType": "standard",
         "audience": "common",
         "translationType": "newTranslation",
-        "usfmVersion": "3.1.rc49"
+        "usfmVersion": "2.6"
+      },
+      "canonType": ["nt"],
+      "canonSpec": {
+        "nt": {
+          "name": "western"
+        }
+      },
+      "currentScope": {
+        "MAT": [],
+        "MRK": [],
+        "LUK": [],
+        "JHN": []
       }
     }
   },
@@ -90,229 +71,118 @@
     {
       "relationType": "expression",
       "flavor": "textTranslation",
-      "id": "dbl::fedcba9876543210:2"
-    },
-    {
-      "relationType": "expression",
-      "flavor": "glossedTextStory",
-      "id": "x-atl::gl47"
-    },
-    {
-      "relationType": "parascriptural",
-      "flavor": "parascripturalWordAlignment",
-      "id": "agmt::irvmal-4-wh"
+      "id": "ptx::b01d38db1c30059b892c8cbbc65b70271743d32d",
+      "revision": "c772aae2277babbe71dce9e3e061656b6909f5e2"
     }
   ],
   "languages": [
     {
       "tag": "en",
       "name": {
-        "en": "English",
-        "de": "Englisch",
-        "fr": "anglais"
-      },
-      "numberingSystem": "latn"
-    }
-  ],
-  "targetAreas": [
-    {
-      "code": "NL",
-      "name": {
-        "nl": "Nederland",
-        "kl": "Pukkitsormiut",
-        "la": "Batavia",
-        "ru": "\u041d\u0438\u0434\u0435\u0440\u043b\u0430\u043d\u0434\u044b"
+        "en": "English"
       }
-    }
-  ],
-  "agencies": [
-    {
-      "id": "dbl::23",
-      "name": {
-        "en": "Burritos R Us Inc"
-      },
-      "abbr": {
-        "en": "BRU"
-      },
-      "url": "https://burritos-r-us.org",
-      "roles": [
-        "rightsHolder",
-        "rightsAdmin",
-        "content",
-        "finance",
-        "management",
-        "publication",
-        "qa"
-      ]
-    },
-    {
-      "id": "dbl::29",
-      "name": {
-        "en": "We Manage Burritos"
-      },
-      "roles": ["qa"]
     }
   ],
   "copyright": {
-    "shortStatementPlain": {
-      "fr": "\u00a9 Burritos R Us 2019."
-    },
+    "publicDomain": true,
     "fullStatementPlain": {
-      "fr": "\u00a9 Burritos R Us 2019. Tous droits r\u00e9serv\u00e9s."
-    },
-    "fullStatementRich": {
-      "fr": "<p><b>\u00a9 Burritos R Us 2019.</b></p><p><i>Tous droits r\u00e9serv\u00e9s.</i></p>"
+      "en": "The World English Bible is in the Public Domain. That means that it is not copyrighted. However, 'World English Bible' is a Trademark of eBible.org. You may copy, publish, proclaim, distribute, redistribute, sell, give away, quote, memorize, read publicly, broadcast, transmit, share, back up, post on the Internet, print, reproduce, preach, teach from, and use the World English Bible as much as you want, and others may also do so. All we ask is that if you CHANGE the actual text of the World English Bible in any way, you not call the result the World English Bible any more. This is to avoid confusion, not to limit your freedom. The Holy Bible is God's Word. It belongs to God. He gave it to us freely, and we who have worked on this translation freely give it to you by dedicating it to the Public Domain."
     }
   },
   "ingredients": {
-    "release/text/USX_1/OTINT.usx": {
+    "ingredients/41MATengWEB14.SFM": {
       "checksum": {
-        "md5": "0123456789abcdef0123456789abcdef"
+        "md5": "8b17a8aa11763b7de35c704234fa9995"
       },
-      "mimeType": "text/x-usx+xml",
-      "scope": {
-        "GEN": [],
-        "EXO": [],
-        "LEV": []
-      },
-      "role": "introduction",
-      "size": 1234
-    },
-    "release/text/USX_1/GEN.usx": {
-      "checksum": {
-        "md5": "0123456789abcdef0123456789abcdef"
-      },
-      "mimeType": "text/x-usx+xml",
-      "scope": {
-        "GEN": []
-      },
-      "size": 1234
-    },
-    "release/text/USX_1/EXO.usx": {
-      "checksum": {
-        "md5": "0123456789abcdef0123456789abcdef"
-      },
-      "mimeType": "text/x-usx+xml",
-      "scope": {
-        "EXO": ["1-12"]
-      },
-      "size": 1234
-    },
-    "release/text/USX_1/LEV.usx": {
-      "checksum": {
-        "md5": "0123456789abcdef0123456789abcdef"
-      },
-      "mimeType": "text/x-usx+xml",
-      "scope": {
-        "LEV": ["2:3-3:7"]
-      },
-      "size": 1234
-    },
-    "release/text/USX_1/INTNT.usx": {
-      "checksum": {
-        "md5": "0123456789abcdef0123456789abcdef"
-      },
-      "mimeType": "text/x-usx+xml",
+      "mimeType": "text/x-usfm",
+      "size": 148562,
       "scope": {
         "MAT": []
-      },
-      "role": "introduction",
-      "size": 1234
+      }
     },
-    "release/text/USX_1/INTMAT.usx": {
+    "ingredients/42MRKengWEB14.SFM": {
       "checksum": {
-        "md5": "0123456789abcdef0123456789abcdef"
+        "md5": "b82b5e9dfe3b1aa0db971044ee85979c"
       },
-      "mimeType": "text/x-usx+xml",
+      "mimeType": "text/x-usfm",
+      "size": 89896,
       "scope": {
-        "MAT": ["1"]
-      },
-      "role": "introduction",
-      "size": 1234
+        "MRK": []
+      }
     },
-    "release/text/USX_1/MAT.usx": {
+    "ingredients/43LUKengWEB14.SFM": {
       "checksum": {
-        "md5": "0123456789abcdef0123456789abcdef"
+        "md5": "2e263ffa126d9482c62248da25bbd545"
       },
-      "mimeType": "text/x-usx+xml",
+      "mimeType": "text/x-usfm",
+      "size": 150787,
       "scope": {
-        "MAT": ["1:3", "1:5", "1:7-11"]
-      },
-      "size": 1234
+        "LUK": []
+      }
     },
-    "unknownAdditive.foo": {
-      "mimeType": "application/octet-stream",
-      "size": 99
+    "ingredients/44JHNengWEB14.SFM": {
+      "checksum": {
+        "md5": "2dddc70509bc658d492bb33320bf7aad"
+      },
+      "mimeType": "text/x-usfm",
+      "size": 115489,
+      "scope": {
+        "JHN": []
+      }
     }
   },
   "names": {
-    "book-gen": {
-      "abbr": {
-        "fr": "Gn"
-      },
+    "MAT": {
       "short": {
-        "fr": "Gen\u00e8se"
+        "en": "Matthew"
+      },
+      "abbr": {
+        "en": "Matthew"
       },
       "long": {
-        "fr": "La Gen\u00e8se"
+        "en": "The Good News According to Matthew"
       }
     },
-    "book-exo": {
-      "abbr": {
-        "fr": "Ex"
-      },
+    "MRK": {
       "short": {
-        "fr": "Exode"
+        "en": "Mark"
+      },
+      "abbr": {
+        "en": "Mark"
       },
       "long": {
-        "fr": "L\u2019Exode"
+        "en": "The Good News According to Mark"
       }
     },
-    "book-lev": {
-      "abbr": {
-        "fr": "Lv"
-      },
+    "LUK": {
       "short": {
-        "fr": "L\u00e9vitique"
+        "en": "Luke"
+      },
+      "abbr": {
+        "en": "Luke"
       },
       "long": {
-        "fr": "Le L\u00e9vitique"
+        "en": "The Good News According to Luke"
       }
     },
-    "book-mat": {
-      "abbr": {
-        "fr": "Mt"
-      },
+    "JHN": {
       "short": {
-        "en": "Matthew",
-        "fr": "Matthieu"
+        "en": "John"
+      },
+      "abbr": {
+        "en": "John"
       },
       "long": {
-        "fr": "Evangile selon Matthieu"
-      }
-    },
-    "intot": {
-      "short": {
-        "fr": "A propos de l'Ancien Testament"
-      }
-    },
-    "intnt": {
-      "short": {
-        "fr": "A propos du Nouveau Testament"
-      }
-    },
-    "intmat": {
-      "short": {
-        "fr": "A propos de Matthieu"
+        "en": "The Good News According to John"
       }
     }
   },
   "recipe": [
     {
-      "idAuthority": "dbl",
-      "operation": "apply_license_agreement",
+      "idAuthority": "exm",
+      "operation": "text_subset",
       "data":  {
-        "license_agreement": "https://thedigitalbiblelibrary.org/license_agreement/nnnn"
+        "scope": ["MAT", "MRK", "LUK", "JHN"]
       }
     }
   ]
