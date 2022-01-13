@@ -51,12 +51,6 @@
         "translationType": "newTranslation",
         "usfmVersion": "2.6"
       },
-      "canonType": ["nt"],
-      "canonSpec": {
-        "nt": {
-          "name": "western"
-        }
-      },
       "currentScope": {
         "MAT": [],
         "MRK": [],
