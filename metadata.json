@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "0.3.0",
+    "version": "1.0.0-rc1",
     "category": "derived",
     "dateCreated": "2020-10-29T20:23:03+08:00",
     "generator": {
@@ -8,7 +8,7 @@
       "softwareVersion": "1.0",
       "userName": "JKT"
     },
-    "defaultLanguage": "en"
+    "defaultLocale": "en"
   },
   "idAuthorities": {
     "ptx": {
