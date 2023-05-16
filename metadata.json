@@ -1,7 +1,7 @@
 {
   "format": "scripture burrito",
   "meta": {
-    "version": "1.0.0-rc3",
+    "version": "1.0.0",
     "category": "derived",
     "dateCreated": "2023-02-21T00:00:00+08:00",
     "generator": {
